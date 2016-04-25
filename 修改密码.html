@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>修改密码</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-2">
+          <a href="javascript:history.back(1)" class="lfh">
+            <img src="images/fh_icon.png" alt="">
+          </a>
+        </div>
+        <div class="col-xs-8">
+          <h2>修改密码</h2>
+        </div>
+      </div>
+    </div>
+    <div id="login" class="edipassword">
+      <h1>修改密码</h1>
+      <form action="" method="post" class="register" onsubmit="return check_form();">
+        <div class="form_group col-xs-12 bdt">
+          <input type="password" id="text" class="text" placeholder="输入旧密码">
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12 bdb">
+          <input type="password" id="password" class="text" placeholder="输入新密码">
+        </div>
+        <div class="form_group col-xs-12 bdb">
+          <input type="password" id="password2" class="text" placeholder="重复输入新密码">
+        </div>
+        <div class="col-xs-12">
+          <button type="submit">确认</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>海南农夫_首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-10">
+          <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+          <div class="text">
+            <h1>海南农夫</h1>
+            <small>做海南原生态农产品的搬运工</small>
+          </div>
+        </div>
+        <div class="col-xs-2">
+          <a href="#" class="rbar">
+            <img src="images/rbaricon.png" alt="">
+          </a>
+          <div class="submenu">
+            <h5>商品分类</h5>
+            <ul>
+              <li>
+                <a href="#"><img src="images/micon_1.png" alt="">热卖</a>
+              </li>
+              <li>
+                <a href="#"><img src="images/micon_2.png" alt="">水果</a>
+              </li>
+              <li>
+                <a href="#"><img src="images/micon_3.png" alt="">鸡蛋</a>
+              </li>
+              <li>
+                <a href="#"><img src="images/micon_4.png" alt="">海产</a>
+              </li>
+              <li>
+                <a href="#"><img src="images/micon_5.png" alt="">特产</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <ul class="bxslider">
+            <li><a href="#"><img src="images/banner_1.jpg" /></a></li>
+            <li><a href="#"><img src="images/banner_2.jpg" /></a></li>
+            <li><a href="#"><img src="images/banner_1.jpg" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="i_good_list">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/good_1.jpg" class="good_pic" alt="">
+            <span class="hot">热卖</span>
+            <div class="bt">
+              <div class="l">
+                <h2>九毛九老面馆、山西.五哥家的风味</h2>
+                <h5>独家山西老面馆，够味！</h5>
+                <p>产地：海南·陵水</p>
+              </div>
+              <div class="r">
+                <div class="price">¥82</div>
+                <a href="产品内页.html" class="buy">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/good_1.jpg" class="good_pic" alt="">
+            <span class="hot">热卖</span>
+            <div class="bt">
+              <div class="l">
+                <h2>九毛九老面馆、山西.五哥家的风味</h2>
+                <h5>独家山西老面馆，够味！</h5>
+                <p>产地：海南·陵水</p>
+              </div>
+              <div class="r">
+                <div class="price">¥82</div>
+                <a href="产品内页.html" class="buy">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/good_1.jpg" class="good_pic" alt="">
+            <span class="hot">抢</span>
+            <div class="bt">
+              <div class="l">
+                <h2>九毛九老面馆、山西.五哥家的风味</h2>
+                <h5>独家山西老面馆，够味！</h5>
+                <p>产地：海南·陵水</p>
+              </div>
+              <div class="r">
+                <div class="price">¥82</div>
+                <a href="产品内页.html" class="buy">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/good_1.jpg" class="good_pic" alt="">
+            <span class="hot">热卖</span>
+            <div class="bt">
+              <div class="l">
+                <h2>九毛九老面馆、山西.五哥家的风味</h2>
+                <h5>独家山西老面馆，够味！</h5>
+                <p>产地：海南·陵水</p>
+              </div>
+              <div class="r">
+                <div class="price">¥82</div>
+                <a href="产品内页.html" class="buy">立即抢购</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer">
+      <ul>
+        <li>
+          <a href="首页.html" class="on">
+            <img src="images/bicon_1.png" alt="">
+            首页
+          </a>
+        </li>
+        <li>
+          <a href="购物车.html">
+            <img src="images/bicon_2.png" alt="">
+            购物车
+          </a>
+        </li>
+        <li>
+          <a href="我的.html">
+            <img src="images/bicon_3.png" alt="">
+            我的
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bxslider.min.js"></script>
+    <script>
+      $(function(){
+        $('.bxslider').bxSlider();
+        $('a.rbar').click(function(){
+          $('#header').find('.submenu').slideToggle("fast");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>设置支付宝账户</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-2">
+          <a href="javascript:history.back(1)" class="lfh">
+            <img src="images/fh_icon.png" alt="">
+          </a>
+        </div>
+        <div class="col-xs-8">
+          <h2>设置支付宝账户</h2>
+        </div>
+      </div>
+    </div>
+    <div id="login">
+      <form action="" method="post" class="register" onsubmit="return check_form();">
+        <p class="tip">注 : 余额满￥100才提现。</p>
+        <div class="form_group col-xs-12 bdt">
+          <input type="text" id="password" class="text" placeholder="支付宝账户">
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12 ">
+          <input type="text" id="password" class="text" placeholder="姓名">
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12 ">
+          <input type="text" id="password2" class="text" placeholder="提现金额">
+          <span class="vcode">元</span>
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12  vq">
+          <input type="text" id="password2" class="text" placeholder="输入验证码">
+          <a href="#" class="vcode"><img src="images/vq.jpg" alt=""></a>
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12 txmm">
+          <input type="password" id="password2" class="text" placeholder="提现密码">
+          <div class="line"><span></span></div>
+          <p>还未设置提现密码?<a href="设置提现密码.html">点此设置</a></p>
+        </div>
+        <div class="col-xs-12">
+          <button type="submit">提交</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

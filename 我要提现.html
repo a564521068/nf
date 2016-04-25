@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>我要提现</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-2">
+          <a href="javascript:history.back(1)" class="lfh">
+            <img src="images/fh_icon.png" alt="">
+          </a>
+        </div>
+        <div class="col-xs-8">
+          <h2>我要提现</h2>
+        </div>
+      </div>
+    </div>
+    <div id="wytx">
+      <div class="top">
+        <div class="l">可提现金额22.33元</div>
+        <a href="提现记录.html" class="r">提现记录</a>
+      </div>
+      <a href="#" class="btn" data-toggle="modal" data-target="#txModal">我要提现</a>
+      <p><img src="images/zfb.png" alt="">支付宝直接提现，快速安全，目前仅支持支付宝提现</p>
+      <a href="设置支付宝账户.html" class="btn2">设置支付宝账户</a>
+    </div>
+     <div id="txModal" class="myModal modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridSystemModalLabel">我要提现</h4>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="fg">
+                <label for="">提现金额：</label>
+                <input type="text" class="text"><span>元</span>
+              </div>
+              <div class="fg">
+                <label for="">提现密码：</label>
+                <input type="password" class="password">
+              </div>
+              <p class="tips">提现申请提交后，大概1-3个工作日完成到账，请注意查收！</p>
+              <input type="submit" class="submit btn btn-default " value="确认提交">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tx2Modal" class="myModal modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridSystemModalLabel">我要提现</h4>
+          </div>
+          <div class="modal-body">
+            <p>尊敬的用户您好，您本月还未消费<span class="color">88</span>元成为水果大使，无法申请提现，如需提现，请到海南农夫微商城购买满<span class="color">88</span>元，即可成为水果大使。谢谢您对我们的关注哦。</p>
+            <div class="btm">
+              <a href="#" class="gb btn btn-default" data-dismiss="modal" aria-label="Close">关闭</a>
+            <a href="#" class="goto btn btn-default">立即前往商城</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>购物车</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-2">
+          <a href="javascript:history.back(1)" class="lfh">
+            <img src="images/fh_icon.png" alt="">
+          </a>
+        </div>
+        <div class="col-xs-8">
+          <h2>购物车</h2>
+        </div>
+      </div>
+    </div>
+    <div id="cart">
+      <div class="item">
+        <div class="top">
+          <h1>炎亭渔夫鱼豆腐豆干15g零食品特产小吃</h1>
+          <a href="#" class="del">删除</a>
+        </div>
+        <div class="bt">
+          <div class="l">
+            <div class="value-box">
+              <span class="jian">-</span>
+              <input type="text" class="goods-number" name="cart_num" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " value="1">
+              <span class="jia">+</span>
+            </div>
+          </div>
+          <div class="r">
+            ￥<span class="prrice">800</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="top">
+          <h1>炎亭渔夫鱼豆腐豆干15g零食品特产小吃</h1>
+          <a href="#" class="del">删除</a>
+        </div>
+        <div class="bt">
+          <div class="l">
+            <div class="value-box">
+              <span class="jian">-</span>
+              <input type="text" class="goods-number" name="cart_num" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " value="1">
+              <span class="jia">+</span>
+            </div>
+          </div>
+          <div class="r">
+            ￥<span class="prrice">800</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="top">
+          <h1>炎亭渔夫鱼豆腐豆干15g零食品特产小吃</h1>
+          <a href="#" class="del">删除</a>
+        </div>
+        <div class="bt">
+          <div class="l">
+            <div class="value-box">
+              <span class="jian">-</span>
+              <input type="text" readonly class="goods-number" name="cart_num" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " value="1">
+              <span class="jia">+</span>
+            </div>
+          </div>
+          <div class="r">
+            ￥<span class="prrice">800</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="total">
+          总价：<b>¥<span class="total_num">256</span></b>
+        </div>
+        <a href="确认订单没有收货地址.html" class="submit">提交订单</a>
+      </div>
+    </div>
+    <div id="footer">
+      <ul>
+        <li>
+          <a href="首页.html">
+            <img src="images/bicon_1.png" alt="">
+            首页
+          </a>
+        </li>
+        <li>
+          <a href="购物车.html"  class="on">
+            <img src="images/bicon_2_1.png" alt="">
+            购物车
+          </a>
+        </li>
+        <li>
+          <a href="我的.html">
+            <img src="images/bicon_3.png" alt="">
+            我的
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('.jian').click(function(){
+      var val = parseInt($(this).siblings('.goods-number').val());
+      if (val<=1) return;
+       $(this).siblings('.goods-number').val(val-1);
+          calculateTotalPrice();
+      });
+      $('.jia').click(function(){
+        var val = parseInt($(this).siblings('.goods-number').val())
+        $(this).siblings('.goods-number').val(val+1);
+          calculateTotalPrice();
+      });
+      function calculateTotalPrice() {
+        var totalPrice = parseFloat("0.00");
+        $('#cart .item').each(function(){
+                totalPrice += parseFloat($(this).find('.prrice').html()) * parseInt($(this).find('.goods-number').val());
+        });
+        $('.total_num').html(totalPrice.toFixed(0));
+        return true;
+      }
+
+
+    </script>
+  </body>
+</html>

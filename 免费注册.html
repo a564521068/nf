@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no" />
+    <title>免费注册</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-xs-2">
+          <a href="javascript:history.back(1)" class="lfh">
+            <img src="images/fh_icon.png" alt="">
+          </a>
+        </div>
+        <div class="col-xs-8">
+          <h2>免费注册</h2>
+        </div>
+      </div>
+    </div>
+    <div id="login">
+      <form action="" method="post" class="register" onsubmit="return check_form();">
+        <div class="form_group col-xs-12 bdt">
+          <span class="user"></span>
+          <input type="text" id="text" class="text" placeholder="请输入手机号码">
+        </div>
+        <div class="line"><span></span></div>
+        <div class="form_group col-xs-12 bdb">
+          <span class="pass"></span>
+          <input type="password" id="password" class="text" placeholder="输入密码">
+        </div>
+        <div class="form_group col-xs-12 bdb">
+          <span class="pass"></span>
+          <input type="password" id="password2" class="text" placeholder="输入密码">
+        </div>
+        <div class="form_group col-xs-12 tel_yzm">
+          <span class="yzm"></span>
+          <input type="password" class="text" placeholder="输入验证码">
+          <a href="#" class="qcode"><img src="images/qcode.jpg" alt=""></a>
+        </div>
+        <div class="col-xs-12">
+          <button type="submit">注册新用户</button>
+        </div>
+        <div class="bttips">
+          <p>已有账号？点此<a href="登录.html" class="reg">登录</a></p>
+        </div>
+      </form>
+    </div>
+    <div id="footer">
+      <ul>
+        <li>
+          <a href="首页.html">
+            <img src="images/bicon_1_1.png" alt="">
+            首页
+          </a>
+        </li>
+        <li>
+          <a href="购物车.html">
+            <img src="images/bicon_2.png" alt="">
+            购物车
+          </a>
+        </li>
+        <li>
+          <a href="我的.html" class="on">
+            <img src="images/bicon_3_1.png" alt="">
+            我的
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
